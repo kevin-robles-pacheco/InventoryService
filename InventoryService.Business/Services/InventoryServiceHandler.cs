@@ -31,13 +31,13 @@ namespace InventoryService.Business.Services
 
                 if (!string.IsNullOrEmpty(valueCache))
                 {
-                    Console.WriteLine("Obteniendo información de Cache...");
+                    Console.WriteLine("Getting information from Cache...");
                     inventory = await GetProductsFromCache(by, valueCache, parameter);
 
                     return inventory;
                 }
 
-                Console.WriteLine("Obteniendo información de Base de Datos...");
+                Console.WriteLine("Getting information from DataBase...");
                 inventory = await GetProductsFromDataBase(by, parameter);
 
                 return inventory;
@@ -52,7 +52,7 @@ namespace InventoryService.Business.Services
                 stopwatch.Stop();
                 // Obtener el tiempo transcurrido en formato de cadena
                 string tiempoTranscurrido = stopwatch.Elapsed.ToString();
-                Console.WriteLine($"El método tardó: [{tiempoTranscurrido}]");
+                Console.WriteLine($"Execution Elasted: [{tiempoTranscurrido}]");
             }
 
         }

@@ -1,7 +1,5 @@
 ﻿using InventoryService.Infraestructure.Services.Cache.Contract;
 using Microsoft.Extensions.Caching.Memory;
-using Newtonsoft.Json;
-using System.Text;
 
 namespace InventoryService.Infraestructure.Services.Cache.Implementation
 {
