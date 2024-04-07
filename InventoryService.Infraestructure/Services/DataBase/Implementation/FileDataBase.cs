@@ -10,7 +10,8 @@ namespace InventoryService.Infraestructure.Services.DataBase.Implementation
         private readonly string _localFile;
         public FileDataBase() 
         {
-            _localFile = Path.Combine("F:\\Proyectos\\Kevin\\InventoryService", "DBMockProducts.json");
+            string directory = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+            _localFile = Path.Combine(directory, "DBMockProducts.json");
             // Cargar datos desde el archivo JSON al inicializar la instancia
             LoadDataFromFile();
         }

@@ -19,4 +19,10 @@
     <ProjectReference Include="..\InventoryService.Business\InventoryService.Business.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Files\DBMockProducts.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

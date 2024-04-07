@@ -3,7 +3,6 @@ using InventoryService.Infraestructure.Services.Cache.Contract;
 using InventoryService.Infraestructure.Services.DataBase.Contract;
 using Newtonsoft.Json;
 using System.Diagnostics;
-using System.Reflection.Metadata;
 
 namespace InventoryService.Business.Services
 {
