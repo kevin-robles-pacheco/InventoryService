@@ -29,13 +29,13 @@ namespace InventoryService
             int optionSelected = ReadOptions();
 
             if (optionSelected == 3) return;
-            Console.WriteLine($"Yout seleccted option is [{optionSelected}]");
+            Console.WriteLine($"Your selected option is [{optionSelected}]");
             string parameter = string.Empty;
             string by = optionSelected == 1 ? "all" : "id";
 
             if (optionSelected == 2)
             {
-                Console.WriteLine($"Please enter id to searh in database:");
+                Console.WriteLine($"Please enter id to search the database:");
                 parameter = Console.ReadLine();
             }
 
