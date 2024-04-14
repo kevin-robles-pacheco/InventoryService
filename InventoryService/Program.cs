@@ -85,7 +85,7 @@ namespace InventoryService
 
             option = int.Parse(optionSelected);
 
-            if (option <= 0 || option > 5)
+            if (option <= 0 || option > 4)
             {
                 Console.WriteLine("Please enter a number from list.");
                 option = ReadOptions();
